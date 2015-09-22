@@ -18,6 +18,7 @@ The example above generates the log file `/var/log/freedns/example.com`.
 ### id
 
 - **namevar**
+
 Your domain's id. It can be optained by accessing http://freedns.afraid.org/dynamic/. It consists of 40 character hash.
 
 ### ensure
