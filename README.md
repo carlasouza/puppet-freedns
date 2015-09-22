@@ -1,4 +1,5 @@
 # puppet-freedns
+
 Configures your dynDNS from [FreeDNS](http://freedns.afraid.org)
 
 ## Example
@@ -10,7 +11,7 @@ class { 'freedns':
 }
 ```
 
-The example above will use the file `/var/log/freedns/example.com` for logging
+The example above generates the log file `/var/log/freedns/example.com`.
 
 ## Parameters
 
@@ -21,10 +22,15 @@ Your domain's id. It can be optained by accessing http://freedns.afraid.org/dyna
 
 ### ensure
 
-Valid values are `present` and `absent`
+Valid values are `present` and `absent`.
+
+Defaults to `present`
 
 ### logdir
 
+Directory where log will be stored. The logfile's name defaults to `$name`. In case `$name` is nil, `$id` will be used.
+
+Defaults to `/var/log/freenode`
 
 ### minute
 
@@ -53,6 +59,10 @@ https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-user
 ### target
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-target
+
+## TODO
+
+Logrotate
 
 ## License
 
