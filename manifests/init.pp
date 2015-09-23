@@ -1,5 +1,6 @@
 class freedns (
-  $id       = $name,
+  $id,
+  $name     = $id,
   $ensure   = 'present',
   $logdir   = '/var/log/freedns',
   $minute   = '*/5',

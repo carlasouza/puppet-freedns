@@ -15,9 +15,11 @@ The example above generates the log file `/var/log/freedns/example.com`.
 
 ## Parameters
 
-### id
+### name
 
-- **namevar**
+The domain to be updated. Defaults to `id`.
+
+### id
 
 Your domain's id. It can be optained by accessing http://freedns.afraid.org/dynamic/. It consists of 40 character hash.
 
