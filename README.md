@@ -13,6 +13,13 @@ class { 'freedns':
 
 The example above generates the log file `/var/log/freedns/example.com`.
 
+## Masterless usage
+
+```bash
+mkdir -p modules && git clone https://github.com/carlasouza/puppet-freedns.git modules/freedns
+sudo puppet apply --modulepath ./modules -e "class { 'freedns': name => 'example.com', id => 'NllUmlneUASDGInQZmI3ZFZEZTk6MTUwNDg1MDE='}"
+```
+
 ## Parameters
 
 ### name
