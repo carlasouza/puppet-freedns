@@ -11,7 +11,7 @@ class { 'freedns':
 }
 ```
 
-The example above generates the log file `/var/log/freedns/example.com`.
+The example above will run every 5 min and generates the log file `/var/log/freedns/example.com`.
 
 ## Masterless usage
 
@@ -46,29 +46,43 @@ Defaults to `/var/log/freenode`
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-minute
 
+Defaults to `*/5`.
+
 ### hour
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-hour
+
+Defaults to `*`.
 
 ### monthday
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-monthday
 
+Defaults to `*`.
+
 ### month
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-month
+
+Defaults to `*`.
 
 ### weekday
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-weekday
 
+Defaults to `*`.
+
 ### user
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-user
 
+Defaults to `root`.
+
 ### target
 
 https://docs.puppetlabs.com/references/latest/type.html#cron-attribute-target
+
+Defaults to `root`.
 
 ## TODO
 
